@@ -1,12 +1,12 @@
 import Hero9 from "./_components/home/Hero9";
 import Process from "./_components/home/Process";
 import ScrollUp from "./_components/home/ScrollUp";
+import OurServices from "./_components/home/OurServices";
+import Inquiry from "./_components/home/Inquiry";
+import Relocation from "./_components/home/Relocation";
 // import Accreditations2 from "./_components/home/Accreditations2";
 // import ChooseUs from "./_components/home/ChooseUs";
-// import Inquiry from "./_components/home/Inquiry";
-// import OurServices from "./_components/home/OurServices";
 // import QuoteForm from "./_components/home/QuoteForm";
-// import Relocation from "./_components/home/Relocation";
 
 export default function Home() {
   return (
@@ -14,10 +14,10 @@ export default function Home() {
       <Hero9 />
       <Process />
       <ScrollUp />
-      {/* <OurServices />
+      <OurServices />
       <Inquiry />
       <Relocation />
-      <QuoteForm />
+      {/* <QuoteForm />
       <ChooseUs />
       <Accreditations2 /> */}
     </div>
