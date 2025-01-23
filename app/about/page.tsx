@@ -1,0 +1,9 @@
+import Robo from "../_components/Robo";
+
+export default function page() {
+  return (
+    <div>
+      <Robo title="About Us Page" />
+    </div>
+  );
+}
