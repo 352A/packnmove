@@ -1,3 +1,5 @@
+"use client";
+
 import { Label } from "@/app/_components/ui/label";
 import { Switch } from "@/app/_components/ui/switch";
 import { Moon, Sun } from "lucide-react";
