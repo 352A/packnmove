@@ -2,7 +2,6 @@ import Footer from "./_components/Footer";
 import Header2 from "./_components/Header2";
 import "./globals.css";
 import { Inter } from "next/font/google";
-// import { Navbar2 } from "./_components/Navbar2";
 
 export const inter = Inter({
   weight: ["400", "600", "700"],
@@ -21,7 +20,6 @@ export default function RootLayout({
       <body className={`${inter.className} antialiased`}>
         <div className="block max-lg:hidden">
           <Header2 />
-          {/* <Navbar2 /> */}
           <div className="dark:bg-zinc-900 dark:bg-gradient-to-r dark:from-zinc-900 dark:to-zinc-800">
             {children}
           </div>
