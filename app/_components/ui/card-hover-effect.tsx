@@ -2,7 +2,7 @@
 
 import { cn } from "@/app/_lib/utils";
 import { AnimatePresence, motion } from "framer-motion";
-import { ForwardRefExoticComponent, RefAttributes, useState } from "react";
+import { ForwardRefExoticComponent, useState } from "react";
 import { CardFooter } from "./card";
 import { IconProps } from "@tabler/icons-react";
 
@@ -13,7 +13,7 @@ export const HoverEffect = ({
   items: {
     title: string;
     description: string;
-    Icon: ForwardRefExoticComponent<IconProps & RefAttributes<Icon>>;
+    Icon: ForwardRefExoticComponent<IconProps>;
   }[];
   className?: string;
 }) => {

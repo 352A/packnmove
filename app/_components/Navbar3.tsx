@@ -115,8 +115,8 @@ export default function Navbar3() {
           </div>
         </ModalTrigger>
         <ModalBody>
-          <ModalContent className="dark:bg-zinc-50">
-            <h4 className="mb-8 text-center text-lg font-bold dark:text-zinc-900 md:text-2xl">
+          <ModalContent className="dark:bg-zinc-900">
+            <h4 className="mb-8 text-center text-lg font-bold dark:text-zinc-100 md:text-2xl">
               Track your shipment
             </h4>
             <input
@@ -127,11 +127,9 @@ export default function Navbar3() {
               className="rounded-xl bg-zinc-100 px-2 py-2"
             />
           </ModalContent>
-          <ModalFooter className="gap-4">
+          <ModalFooter className="gap-4 bg-zinc-800">
             <Button variant="secondary">Cancel</Button>
-            <button className="w-28 rounded-md border border-primary bg-primary px-2 py-1 text-sm text-white dark:bg-primary">
-              Track
-            </button>
+            <Button>Track</Button>
           </ModalFooter>
         </ModalBody>
       </Modal>
