@@ -4,9 +4,9 @@ import ScrollUp from "./_components/home/ScrollUp";
 import OurServices from "./_components/home/OurServices";
 import Inquiry from "./_components/home/Inquiry";
 import Relocation from "./_components/home/Relocation";
+import QuoteForm from "./_components/home/QuoteForm";
+import ChooseUs from "./_components/home/ChooseUs";
 // import Accreditations2 from "./_components/home/Accreditations2";
-// import ChooseUs from "./_components/home/ChooseUs";
-// import QuoteForm from "./_components/home/QuoteForm";
 
 export default function Home() {
   return (
@@ -17,9 +17,9 @@ export default function Home() {
       <OurServices />
       <Inquiry />
       <Relocation />
-      {/* <QuoteForm />
+      <QuoteForm />
       <ChooseUs />
-      <Accreditations2 /> */}
+      {/* <Accreditations2 /> */}
     </div>
   );
 }
