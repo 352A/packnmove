@@ -12,10 +12,7 @@ const TRANSITION = {
 
 export default function Popover() {
   const uniqueId = useId();
-  const [isClient, setIsClient] = useState(false); // State to track if we're on the client
-  const formContainerRef = useRef<HTMLDivElement>(
-    document.createElement("div"),
-  ); // Use null instead of document.createElement
+  const formContainerRef = useRef<HTMLDivElement | null>(null);
 
   const [isOpen, setIsOpen] = useState(false);
 
@@ -27,17 +24,11 @@ export default function Popover() {
     setIsOpen(false);
   };
 
-  useClickOutside(formContainerRef, () => {
+  useClickOutside(formContainerRef as React.RefObject<HTMLElement>, () => {
     closeMenu();
   });
 
   useEffect(() => {
-    setIsClient(true); // Set to true when component mounts on the client side
-  }, []);
-
-  useEffect(() => {
-    if (!isClient) return; // Don't run this if we're not on the client
-
     const handleKeyDown = (event: KeyboardEvent) => {
       if (event.key === "Escape") {
         closeMenu();
@@ -49,9 +40,7 @@ export default function Popover() {
     return () => {
       document.removeEventListener("keydown", handleKeyDown);
     };
-  }, [isClient]);
-
-  if (!isClient) return null; // Render nothing until after the component is mounted on the client
+  }, []);
 
   return (
     <MotionConfig transition={TRANSITION}>
