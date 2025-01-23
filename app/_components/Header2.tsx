@@ -1,7 +1,7 @@
 "use client";
 
 import Navbar3 from "./Navbar3";
-import Theme from "./Theme";
+// import Theme from "./Theme";
 
 export default function Header2() {
   return (
