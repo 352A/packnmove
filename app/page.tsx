@@ -1,6 +1,6 @@
+import Hero9 from "./_components/home/Hero9";
 // import Accreditations2 from "./_components/home/Accreditations2";
 // import ChooseUs from "./_components/home/ChooseUs";
-// import Hero9 from "./_components/home/Hero9";
 // import Inquiry from "./_components/home/Inquiry";
 // import OurServices from "./_components/home/OurServices";
 // import Process from "./_components/home/Process";
@@ -11,8 +11,8 @@
 export default function Home() {
   return (
     <div>
-      {/* <Hero9 />
-      <Process />
+      <Hero9 />
+      {/* <Process />
       <ScrollUp />
       <OurServices />
       <Inquiry />
