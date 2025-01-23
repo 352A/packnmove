@@ -1,3 +1,5 @@
+"use client";
+
 import Popover from "../ui/Popover";
 
 export default function QuoteForm() {
