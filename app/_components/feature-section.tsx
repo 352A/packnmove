@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 import { cn } from "@/app/_lib/utils";
 
 interface Feature {
@@ -21,7 +21,6 @@ interface FeatureStepsProps {
 
 export function FeatureSteps({
   features,
-  className,
   title = "How to get Started",
   autoPlayInterval = 3000,
 }: FeatureStepsProps) {

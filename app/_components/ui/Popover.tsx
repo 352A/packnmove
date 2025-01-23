@@ -12,9 +12,10 @@ const TRANSITION = {
 
 export default function Popover() {
   const uniqueId = useId();
-  const formContainerRef = useRef<HTMLDivElement>(null);
+  const formContainerRef = useRef<HTMLDivElement>(
+    document.createElement("div"),
+  );
   const [isOpen, setIsOpen] = useState(false);
-  const [note, setNote] = useState<null | string>(null);
 
   const openMenu = () => {
     setIsOpen(true);
@@ -22,7 +23,6 @@ export default function Popover() {
 
   const closeMenu = () => {
     setIsOpen(false);
-    setNote(null);
   };
 
   useClickOutside(formContainerRef, () => {
@@ -113,7 +113,6 @@ export default function Popover() {
                     className="col-span-2 resize-none rounded-md bg-white px-4 py-3 text-sm outline-none"
                     autoFocus
                     placeholder="your message?"
-                    onChange={(e) => setNote(e.target.value)}
                   />
                 </div>
                 <div key="close" className="flex justify-between px-4">
