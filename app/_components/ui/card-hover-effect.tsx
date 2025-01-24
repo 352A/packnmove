@@ -61,7 +61,7 @@ export const HoverEffect = ({
               {/* <item.Icon className="absolute -bottom-8 -left-7 -z-10 mt-6 size-52 text-zinc-600 opacity-5 transition-all duration-200 ease-linear group-hover:left-0 dark:text-zinc-900 dark:opacity-25" /> */}
               <item.Icon className="group-hover: absolute right-4 top-0 -z-10 mt-6 size-9 text-primary transition-all duration-200 ease-linear dark:text-zinc-100" />
             </CardFooter>
-            <span className="absolute -right-5 -top-20 -z-20 select-none text-[17rem] font-bold text-zinc-300 opacity-35 drop-shadow-2xl dark:text-zinc-900/35">
+            <span className="absolute -right-5 -top-20 -z-20 select-none text-[17rem] font-bold text-zinc-400/25 opacity-35 drop-shadow-2xl dark:text-zinc-900/35">
               {idx + 1}
             </span>
           </Card>
@@ -81,7 +81,7 @@ export const Card = ({
   return (
     <div
       className={cn(
-        "relative z-20 h-full w-full overflow-hidden rounded-2xl bg-zinc-50 bg-gradient-to-b from-zinc-50 to-zinc-800/5 p-4 group-hover:border-zinc-200 dark:bg-zinc-800 dark:from-zinc-800 dark:to-zinc-800",
+        "relative z-20 h-full w-full overflow-hidden rounded-2xl bg-zinc-50 bg-gradient-to-b from-zinc-100 to-zinc-300 p-4 group-hover:border-zinc-200 dark:bg-zinc-800 dark:from-zinc-800 dark:to-zinc-800",
         className,
       )}
     >
