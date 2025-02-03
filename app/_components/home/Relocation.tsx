@@ -18,7 +18,7 @@ export default function Relocation() {
         </p>
       </div>
 
-      <CardContainer className="w-full px-6">
+      <CardContainer className="w-full px-6 lg:w-96">
         <CardBody className="group/card relative h-auto w-auto rounded-xl border bg-zinc-900 p-6 dark:bg-zinc-800/65 dark:hover:shadow-2xl dark:hover:shadow-zinc-800/[0.1] sm:w-[30rem]">
           {/* <div className="absolute left-1/2 top-1/2 h-64 w-64 -translate-x-1/2 -translate-y-1/2 rounded-full bg-zinc-800"></div> */}
           <div className="absolute left-0 top-0 h-full w-full overflow-hidden">
