@@ -89,7 +89,7 @@ export function Navigation() {
     <ul className="flex max-lg:justify-around max-lg:px-4 lg:gap-12 lg:dark:text-zinc-200">
       {navLinks.map((nav, idx) => (
         <motion.li
-          className={` ${path === nav.href ? "text-primary" : "text-zinc-900 dark:text-zinc-100"} relative flex cursor-pointer justify-center py-3 font-semibold`}
+          className={` ${path === nav.href ? "text-primary" : "text-zinc-900 dark:text-zinc-100"} relative flex cursor-pointer justify-center py-1 font-semibold lg:py-3`}
           key={nav.href}
           onMouseEnter={() => setHoveredIndex(idx)}
           onMouseLeave={() => setHoveredIndex(null)}
@@ -134,7 +134,7 @@ export function Navigation() {
           </AnimatePresence>
         </motion.li>
       ))}
-      <li className="relative flex cursor-pointer justify-center py-3 font-semibold lg:hidden">
+      <li className="relative flex cursor-pointer justify-center py-1 font-semibold lg:hidden lg:py-3">
         <div
           className={`flex justify-start rounded-md bg-zinc-100/75 px-5 py-4 dark:bg-zinc-950/75 dark:text-zinc-100`}
         >
