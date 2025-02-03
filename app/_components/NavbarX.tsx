@@ -45,33 +45,26 @@ const navLinks = [
   },
 ];
 
-export default function Navbar3() {
+export default function Navbar() {
   const path = usePathname();
 
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
   return (
-    <nav className="z-10 mx-auto flex h-20 w-5/6 items-center justify-evenly rounded-full border-b bg-white py-1 shadow-sm shadow-zinc-100 dark:bg-zinc-950/20 dark:bg-gradient-to-r dark:from-zinc-950/20 dark:to-zinc-900/20 dark:shadow-none">
+    <nav className="mx-44 mt-2 flex items-center justify-evenly rounded-b-3xl rounded-bl-full dark:bg-neutral-900">
       <Link href="/">
-        {/* <Image
+        <Image
           src="/logo.png"
           alt="logo"
           width={65}
           height={65}
-          className="rounded-md border-4 border-white bg-white px-1 transition-transform duration-500 ease-in-out hover:rotate-6 hover:scale-95 dark:border-zinc-900"
-        /> */}
-        <Image
-          src="/logo-t.png"
-          alt="logo"
-          width={65}
-          height={65}
-          className="rounded-md px-2 transition-transform duration-500 ease-in-out hover:rotate-6 hover:scale-95"
+          className="-translate-y-7 rounded-md border-4 border-white bg-white px-1 transition-transform duration-500 ease-in-out hover:rotate-6 hover:border-neutral-800 hover:bg-neutral-200"
         />
       </Link>
-      <ul className="flex gap-12 dark:text-zinc-200">
+      <ul className="flex gap-12 dark:text-neutral-100">
         {navLinks.map((nav, idx) => (
           <motion.li
-            className={` ${path === nav.href ? "text-primary" : "text-zinc-900 dark:text-zinc-100"} relative flex cursor-pointer justify-center py-3 font-semibold`}
+            className={` ${path === nav.href && "text-primary"} relative flex cursor-pointer justify-center py-3 font-semibold`}
             key={nav.href}
             onMouseEnter={() => setHoveredIndex(idx)}
             onMouseLeave={() => setHoveredIndex(null)}
@@ -82,7 +75,7 @@ export default function Navbar3() {
             <AnimatePresence>
               {hoveredIndex === idx && (
                 <motion.span
-                  className="absolute top-0 block h-full w-full rounded-xl bg-zinc-100/75 px-12 dark:bg-zinc-800/35"
+                  className="absolute top-0 block h-full w-full rounded-xl bg-neutral-100/75 px-12 dark:bg-neutral-800"
                   layoutId="hoverBackground"
                   initial={{ opacity: 0 }}
                   animate={{
@@ -91,7 +84,7 @@ export default function Navbar3() {
                   exit={{
                     opacity: 0,
                     transition: {
-                      type: "tween",
+                      type: "spring",
                       stiffness: 300,
                       damping: 25,
                     },
@@ -103,8 +96,6 @@ export default function Navbar3() {
         ))}
       </ul>
 
-      {/* <div className="absolute bottom-0 left-1/2 h-2 w-5/6 -translate-x-1/2 bg-zinc-50 bg-gradient-to-r from-zinc-700 to-primary dark:hidden"></div> */}
-
       <Modal>
         <ModalTrigger className="group/modal-btn flex justify-center bg-primary text-white">
           <span className="text-center transition duration-500 group-hover/modal-btn:translate-x-40">
@@ -115,21 +106,16 @@ export default function Navbar3() {
           </div>
         </ModalTrigger>
         <ModalBody>
-          <ModalContent className="dark:bg-zinc-900">
-            <h4 className="mb-8 text-center text-lg font-bold dark:text-zinc-100 md:text-2xl">
+          <ModalContent className="dark:bg-neutral-50">
+            <h4 className="mb-8 text-center text-lg font-bold dark:text-neutral-900 md:text-2xl">
               Track your shipment
             </h4>
-            <input
-              type="text"
-              name="id"
-              id="id"
-              placeholder="Enter tracking number"
-              className="rounded-xl bg-zinc-100 px-2 py-2"
-            />
           </ModalContent>
-          <ModalFooter className="gap-4 bg-zinc-800">
+          <ModalFooter className="gap-4">
             <Button variant="secondary">Cancel</Button>
-            <Button>Track</Button>
+            <button className="w-28 rounded-md border border-primary bg-primary px-2 py-1 text-sm text-white dark:bg-primary">
+              Track
+            </button>
           </ModalFooter>
         </ModalBody>
       </Modal>

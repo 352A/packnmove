@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function ScrollUp() {
   return (
-    <div className="flex flex-col overflow-hidden bg-gradient-to-r dark:bg-zinc-900 dark:from-zinc-900 dark:to-zinc-800">
+    <div className="flex flex-col overflow-hidden bg-gradient-to-r dark:bg-zinc-900 dark:from-zinc-900 dark:to-zinc-800 max-lg:hidden">
       <ContainerScroll
         titleComponent={
           <>

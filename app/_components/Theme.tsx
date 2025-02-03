@@ -3,28 +3,23 @@
 import { Label } from "@/app/_components/ui/label";
 import { Switch } from "@/app/_components/ui/switch";
 import { Moon, Sun } from "lucide-react";
-import { useEffect, useState } from "react";
+import { useLayoutEffect, useState } from "react";
 
 export default function Theme() {
   const [isDarkMode, setIsDarkMode] = useState(false);
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     const savedTheme = localStorage.getItem("theme") || "light";
     const darkMode = savedTheme === "dark";
     setIsDarkMode(darkMode);
-    if (darkMode) {
-      document.documentElement.classList.add("dark");
-    }
+    document.documentElement.classList.toggle("dark", darkMode);
   }, []);
 
-  useEffect(() => {
-    localStorage.setItem("theme", isDarkMode ? "dark" : "light");
-    if (isDarkMode) {
-      document.documentElement.classList.add("dark");
-    } else {
-      document.documentElement.classList.remove("dark");
-    }
-  }, [isDarkMode]);
+  const toggleDarkMode = (checked: boolean) => {
+    setIsDarkMode(checked);
+    localStorage.setItem("theme", checked ? "dark" : "light");
+    document.documentElement.classList.toggle("dark", checked);
+  };
 
   return (
     <div className="flex items-center space-x-2">
@@ -32,7 +27,7 @@ export default function Theme() {
       <Switch
         id="dark-mode"
         checked={isDarkMode}
-        onCheckedChange={setIsDarkMode}
+        onCheckedChange={toggleDarkMode}
       />
       <Moon className="h-4 w-4" />
       <Label htmlFor="dark-mode" className="sr-only">

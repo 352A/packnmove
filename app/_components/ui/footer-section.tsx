@@ -9,14 +9,14 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from "@/app/_components/ui/tooltip";
-import { Facebook, Instagram, Linkedin, Twitter } from "lucide-react";
+import { Facebook, Instagram, Linkedin } from "lucide-react";
 import Image from "next/image";
 
 function Footerdemo() {
   return (
-    <footer className="dark:bg-zinc-9 00 relative border-t bg-gradient-to-r text-foreground transition-colors duration-300 dark:bg-zinc-900 dark:from-zinc-900 dark:to-zinc-800">
-      <div className="px-4 py-12 md:px-6 lg:px-24">
-        <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-5">
+    <footer className="relative bg-gradient-to-r text-foreground transition-colors duration-300 dark:bg-zinc-900 dark:from-zinc-900 dark:to-zinc-800 lg:border-t">
+      <div className="px-8 py-12 md:px-6 lg:px-24">
+        <div className="grid gap-x-16 gap-y-12 max-lg:gap-x-2 md:grid-cols-2 lg:grid-cols-5">
           <div className="relative col-span-2">
             <h2 className="mb-4 text-3xl font-bold tracking-tight">
               Stay Connected
@@ -95,23 +95,6 @@ function Footerdemo() {
                   </TooltipTrigger>
                   <TooltipContent>
                     <p>Follow us on Facebook</p>
-                  </TooltipContent>
-                </Tooltip>
-              </TooltipProvider>
-              <TooltipProvider>
-                <Tooltip>
-                  <TooltipTrigger asChild>
-                    <Button
-                      variant="outline"
-                      size="icon"
-                      className="rounded-full"
-                    >
-                      <Twitter className="h-4 w-4" />
-                      <span className="sr-only">Twitter</span>
-                    </Button>
-                  </TooltipTrigger>
-                  <TooltipContent>
-                    <p>Follow us on Twitter</p>
                   </TooltipContent>
                 </Tooltip>
               </TooltipProvider>

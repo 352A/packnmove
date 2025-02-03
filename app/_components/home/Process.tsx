@@ -40,12 +40,12 @@ export const projects = [
 
 export default function Process() {
   return (
-    <section className="relative w-full bg-gradient-to-r dark:bg-zinc-900 dark:from-zinc-900 dark:to-zinc-800">
-      <div className="w-full rounded-b-[8rem] border-b-[0.3rem] border-zinc-800 bg-zinc-50 bg-gradient-to-r py-16 dark:border-white dark:bg-zinc-900 dark:from-zinc-900 dark:to-zinc-800">
-        <h2 className="text-center text-4xl font-bold text-zinc-800 dark:text-zinc-100">
+    <section className="relative w-full bg-gradient-to-r dark:bg-zinc-900 dark:from-zinc-900 dark:to-zinc-800 max-lg:px-6 max-lg:py-12">
+      <div className="w-full bg-zinc-50 bg-gradient-to-r dark:bg-zinc-900 dark:from-zinc-900 dark:to-zinc-800 lg:rounded-b-[8rem] lg:border-b-[0.3rem] lg:border-zinc-800 lg:py-8 lg:dark:border-white">
+        <h2 className="text-center text-2xl font-bold leading-relaxed text-zinc-800 dark:text-zinc-100 lg:text-4xl">
           PROFESSIONAL & QUICK PROCESS
         </h2>
-        <div className="mx-auto px-36">
+        <div className="mx-auto lg:px-36">
           <HoverEffect items={projects} />
         </div>
       </div>

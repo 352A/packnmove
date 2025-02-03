@@ -67,7 +67,7 @@ export default function Popover() {
             <motion.div
               ref={formContainerRef}
               layoutId={`popover-${uniqueId}`}
-              className="absolute h-72 overflow-hidden bg-zinc-800"
+              className="absolute mx-6 h-72 overflow-hidden bg-zinc-800"
               style={{
                 borderRadius: 12,
               }}

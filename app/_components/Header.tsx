@@ -1,28 +1,35 @@
-import {
-  IconPhoneFilled,
-  IconHomeFilled,
-  IconClockHour2Filled,
-} from "@tabler/icons-react";
-import Navbar from "./Navbar";
+"use client";
+
+import Logo from "./Logo";
+import { DesktopNavbar } from "./Navbar";
+import Theme from "./Theme";
 
 export default function Header() {
   return (
-    <div className="border-b dark:bg-neutral-900">
-      <header className="relative ms-auto flex h-10 w-1/2 items-center justify-center gap-12 rounded-bl-full bg-neutral-50 px-12 text-neutral-700 dark:bg-white dark:text-neutral-800">
-        <div className="flex gap-2">
-          <IconPhoneFilled />
-          <span>1840400</span>
-        </div>
-        <div className="flex gap-2">
-          <IconHomeFilled />
-          <span>Kuwait City - Al Hamra Tower</span>
-        </div>
-        <div className="flex gap-2">
-          <IconClockHour2Filled />
-          <span>All Week: 24/7 H</span>
-        </div>
-      </header>
-      <Navbar />
-    </div>
+    <>
+      <DesktopHeader />
+      <MobileHeader />
+    </>
+  );
+}
+
+export function DesktopHeader() {
+  return (
+    <header className="relative z-10 w-full bg-zinc-50 dark:bg-gradient-to-r dark:from-zinc-900 dark:to-zinc-800 max-lg:hidden">
+      <div className="flex h-12 w-full items-center justify-end px-12">
+        <Theme />
+      </div>
+      <DesktopNavbar />
+    </header>
+  );
+}
+
+export function MobileHeader() {
+  return (
+    <header className="w-full bg-zinc-50 dark:bg-gradient-to-r dark:from-zinc-900 dark:to-zinc-800 lg:hidden">
+      <div className="flex w-full items-center justify-around py-1">
+        <Logo />
+      </div>
+    </header>
   );
 }

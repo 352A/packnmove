@@ -32,8 +32,8 @@ const features = [
 
 export default function ChooseUs() {
   return (
-    <div className="bg-zinc-900 bg-gradient-to-r px-64 pb-32 dark:bg-zinc-100 dark:from-zinc-200 dark:to-zinc-100">
-      <div className="rounded-3xl bg-zinc-50 bg-gradient-to-r px-24 py-16 dark:bg-zinc-900 dark:from-zinc-900 dark:to-zinc-800">
+    <div className="bg-zinc-900 bg-gradient-to-r px-4 pb-32 dark:bg-zinc-100 dark:from-zinc-200 dark:to-zinc-100 lg:px-64">
+      <div className="rounded-3xl bg-zinc-50 bg-gradient-to-r px-6 py-16 dark:bg-zinc-900 dark:from-zinc-900 dark:to-zinc-800 lg:px-24">
         <FeatureSteps
           features={features}
           title="Why Choose Us?"

@@ -52,9 +52,9 @@ export default function OurServices() {
     <section className="relative dark:bg-white">
       {/* <div className="transalte-y-12 h-12 rounded-bl-[10rem] dark:bg-zinc-900"></div> */}
       <div className="bg-gradient-to-r pb-32 dark:bg-zinc-900 dark:from-zinc-900 dark:to-zinc-800">
-        <div className="flex flex-col gap-12 px-44 text-center">
+        <div className="flex flex-col gap-12 text-center lg:px-44">
           <h1 className="text-4xl font-bold dark:text-zinc-50">Our Services</h1>
-          <p className="px-32 text-zinc-400">
+          <p className="px-8 text-zinc-400 lg:px-32">
             Pack ‘N’ Move is a leading provider of comprehensive services in
             Kuwait, catering to transportation, logistics, shipping, real
             estate, and e-commerce solutions. With a strong commitment to
@@ -62,7 +62,7 @@ export default function OurServices() {
             meet the diverse needs of businesses and individuals.
           </p>
         </div>
-        <div className="relative z-10 mx-auto mt-12 grid max-w-7xl grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+        <div className="relative z-10 mx-auto mt-12 grid max-w-7xl grid-cols-1 max-lg:justify-items-center md:grid-cols-2 lg:grid-cols-3">
           {features.map((feature, index) => (
             <Feature key={feature.title} {...feature} index={index} />
           ))}

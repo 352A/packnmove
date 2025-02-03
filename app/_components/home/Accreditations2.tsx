@@ -21,10 +21,10 @@ export default function Accreditations2() {
       <Card className="border-none">
         <CardContent className="bg-gradient-to-tr py-24 dark:bg-zinc-800/85 dark:bg-zinc-900 dark:from-zinc-900 dark:to-zinc-800">
           <div className="mb-20 space-y-4 text-center">
-            <p className="text-lg font-medium text-zinc-400">
+            <p className="text-md font-medium text-zinc-400 lg:text-lg">
               Teamwork begins by building trust
             </p>
-            <h2 className="text-4xl font-bold text-zinc-900 dark:text-zinc-100">
+            <h2 className="text-2xl font-bold text-zinc-900 dark:text-zinc-100 lg:text-4xl">
               Memberships | Certifications | Accreditation&apos;s
             </h2>
           </div>
