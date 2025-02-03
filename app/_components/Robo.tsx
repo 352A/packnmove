@@ -15,7 +15,7 @@ export default function Robo({ title }: { title: string }) {
 
         <div className="flex h-full max-lg:flex-col">
           {/* Left content */}
-          <div className="relative z-0 flex flex-1 flex-col items-center justify-center py-6 text-center lg:ps-24">
+          <div className="relative z-0 flex flex-1 flex-col justify-center py-6 max-lg:items-center max-lg:text-center lg:ps-24">
             <h1 className="bg-gradient-to-b from-neutral-50 to-neutral-400 bg-clip-text py-4 text-4xl font-bold text-transparent md:text-5xl">
               {title}
             </h1>
