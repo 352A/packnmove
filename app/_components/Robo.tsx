@@ -2,16 +2,16 @@
 
 import { SplineScene } from "@/app/_components/ui/splite";
 import { Card } from "@/app/_components/ui/card";
-import { Spotlight } from "./ui/Spotlight";
+// import { Spotlight } from "./ui/Spotlight";
 
 export default function Robo({ title }: { title: string }) {
   return (
     <section className="bg-zinc-50 bg-gradient-to-r px-6 py-4 dark:bg-zinc-900 dark:from-zinc-900 dark:to-zinc-800 lg:px-24">
       <Card className="relative h-[40rem] w-full overflow-hidden border-none bg-neutral-950 bg-gradient-to-r px-6 dark:bg-zinc-900 dark:from-zinc-950 dark:to-zinc-900 lg:h-[30rem]">
-        <Spotlight
+        {/* <Spotlight
           className="-top-40 left-0 md:-top-20 md:left-60"
           // fill="white"
-        />
+        /> */}
 
         <div className="flex h-full max-lg:flex-col">
           {/* Left content */}
