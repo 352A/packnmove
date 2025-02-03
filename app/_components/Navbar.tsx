@@ -86,10 +86,10 @@ export function Navigation() {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
   return (
-    <ul className="flex max-lg:justify-evenly max-lg:px-4 lg:gap-12 lg:dark:text-zinc-200">
+    <ul className="flex max-lg:justify-around max-lg:px-4 lg:gap-12 lg:dark:text-zinc-200">
       {navLinks.map((nav, idx) => (
         <motion.li
-          className={` ${path === nav.href ? "text-primary" : "text-zinc-900 dark:text-zinc-100"} relative flex cursor-pointer justify-center py-1 font-semibold lg:py-3`}
+          className={` ${path === nav.href ? "text-primary" : "text-zinc-900 dark:text-zinc-100"} ${idx > 2 && "max-sm:hidden"} relative flex cursor-pointer justify-center py-1 font-semibold lg:py-3`}
           key={nav.href}
           onMouseEnter={() => setHoveredIndex(idx)}
           onMouseLeave={() => setHoveredIndex(null)}
@@ -99,7 +99,7 @@ export function Navigation() {
           </Link>
 
           <Link
-            className={` ${idx > 2 && "max-sm:hidden"} relative z-20 rounded-full hover:bg-zinc-100 dark:hover:bg-zinc-800 lg:hidden`}
+            className={`relative z-20 rounded-full hover:bg-zinc-100 dark:hover:bg-zinc-800 lg:hidden`}
             href={nav.href}
           >
             <div
@@ -115,7 +115,7 @@ export function Navigation() {
           <AnimatePresence>
             {hoveredIndex === idx && (
               <motion.span
-                className={`absolute top-0 block h-full w-full rounded-xl bg-zinc-100/75 px-12 dark:bg-zinc-800/35 max-lg:hidden`}
+                className="absolute top-0 block h-full w-full rounded-xl bg-zinc-100/75 px-12 dark:bg-zinc-800/35 max-lg:hidden"
                 layoutId="hoverBackground"
                 initial={{ opacity: 0 }}
                 animate={{
