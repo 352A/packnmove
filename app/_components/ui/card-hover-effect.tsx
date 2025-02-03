@@ -50,7 +50,7 @@ export const HoverEffect = ({
               />
             )}
           </AnimatePresence>
-          <Card className="group transition-all duration-300 ease-linear hover:scale-110">
+          <Card className="group transition-all duration-300 ease-linear lg:hover:scale-110">
             <CardTitle className="text-lg text-zinc-800">
               {item.title}
             </CardTitle>
