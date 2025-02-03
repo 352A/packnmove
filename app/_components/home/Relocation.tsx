@@ -6,7 +6,7 @@ import { cn } from "@/app/_lib/utils";
 
 export default function Relocation() {
   return (
-    <section className="grid w-full items-center gap-2 overflow-hidden bg-zinc-50 bg-gradient-to-r px-2 py-24 dark:bg-zinc-900 dark:from-zinc-900 dark:to-zinc-800 lg:grid-cols-2 lg:gap-12 lg:px-44">
+    <section className="grid w-full select-none items-center gap-2 overflow-hidden bg-zinc-50 bg-gradient-to-r px-2 py-24 dark:bg-zinc-900 dark:from-zinc-900 dark:to-zinc-800 lg:grid-cols-2 lg:gap-12 lg:px-44">
       <div className="flex flex-col gap-12 max-lg:px-6 max-lg:text-center">
         <h1 className="text-2xl font-bold lg:text-4xl">
           Seamless Relocation Solutions for a Stress-Free Move

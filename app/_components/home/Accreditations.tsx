@@ -13,7 +13,7 @@ export function Accreditations() {
   return (
     <section className="bg-white py-24">
       <div className="flex flex-col gap-6">
-        <h1 className="text-center text-xl font-bold leading-relaxed text-neutral-800 lg:text-4xl">
+        <h1 className="text-center text-4xl font-bold text-neutral-800">
           Memberships | Certifications | Accreditation&apos;s
         </h1>
         <p className="text-center text-lg text-neutral-700">
