@@ -6,7 +6,7 @@ import { cn } from "@/app/_lib/utils";
 
 export default function Relocation() {
   return (
-    <section className="grid w-full items-center gap-2 bg-zinc-50 bg-gradient-to-r px-8 py-24 dark:bg-zinc-900 dark:from-zinc-900 dark:to-zinc-800 lg:grid-cols-2 lg:gap-12 lg:px-44">
+    <section className="grid w-full items-center gap-2 overflow-hidden bg-zinc-50 bg-gradient-to-r px-8 py-24 dark:bg-zinc-900 dark:from-zinc-900 dark:to-zinc-800 lg:grid-cols-2 lg:gap-12 lg:px-44">
       <div className="flex flex-col gap-12 max-lg:px-6 max-lg:text-center">
         <h1 className="text-2xl font-bold lg:text-4xl">
           Seamless Relocation Solutions for a Stress-Free Move
@@ -18,7 +18,7 @@ export default function Relocation() {
         </p>
       </div>
 
-      <CardContainer className="w-96">
+      <CardContainer className="w-full px-6">
         <CardBody className="group/card relative h-auto w-auto rounded-xl border bg-zinc-900 p-6 dark:bg-zinc-800/65 dark:hover:shadow-2xl dark:hover:shadow-zinc-800/[0.1] sm:w-[30rem]">
           {/* <div className="absolute left-1/2 top-1/2 h-64 w-64 -translate-x-1/2 -translate-y-1/2 rounded-full bg-zinc-800"></div> */}
           <div className="absolute left-0 top-0 h-full w-full overflow-hidden">

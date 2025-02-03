@@ -51,7 +51,7 @@ export default function OurServices() {
   return (
     <section className="relative dark:bg-white">
       {/* <div className="transalte-y-12 h-12 rounded-bl-[10rem] dark:bg-zinc-900"></div> */}
-      <div className="bg-gradient-to-r pb-32 dark:bg-zinc-900 dark:from-zinc-900 dark:to-zinc-800">
+      <div className="bg-gradient-to-r dark:bg-zinc-900 dark:from-zinc-900 dark:to-zinc-800 lg:pb-32">
         <div className="flex flex-col gap-12 text-center lg:px-44">
           <h1 className="text-4xl font-bold dark:text-zinc-50">Our Services</h1>
           <p className="px-8 text-zinc-400 lg:px-32">

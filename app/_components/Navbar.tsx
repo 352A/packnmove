@@ -99,7 +99,7 @@ export function Navigation() {
           </Link>
 
           <Link
-            className={` ${idx > 2 && "max-sm:hidden"} relative z-20 rounded-full hover:bg-zinc-100 dark:hover:bg-zinc-800 lg:hidden`}
+            className={` ${idx > 3 && "max-sm:hidden"} relative z-20 rounded-full hover:bg-zinc-100 dark:hover:bg-zinc-800 lg:hidden`}
             href={nav.href}
           >
             <div
