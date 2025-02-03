@@ -3,7 +3,7 @@ import { Button } from "../ui/button";
 export default function Hero9() {
   return (
     <section className="relative bg-zinc-50 dark:bg-transparent lg:py-12 lg:pt-16 xl:px-12">
-      <div className="sticky right-0 top-0 flex w-full justify-end overflow-hidden lg:absolute xl:px-12 xl:pl-52">
+      <div className="right-0 flex w-full justify-end overflow-hidden max-lg:sticky max-lg:top-0 lg:absolute xl:px-12 xl:pl-52">
         <video
           autoPlay
           muted
