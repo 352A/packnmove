@@ -103,7 +103,7 @@ export function Navigation() {
             href={nav.href}
           >
             <div
-              className={`${path === nav.href ? "bg-zinc-100/85 shadow-inner shadow-zinc-200 dark:bg-zinc-950/75 dark:shadow-none" : ""} flex justify-start gap-3 rounded-full px-5 py-4 dark:text-zinc-300`}
+              className={`${path === nav.href ? "bg-zinc-100/85 shadow-inner shadow-zinc-200 dark:bg-zinc-950/75 dark:shadow-none" : ""} flex justify-start gap-3 rounded-full px-4 py-3 dark:text-zinc-300`}
             >
               {nav.icon}
               <span className={`${path === nav.href ? "block" : "hidden"}`}>
@@ -136,7 +136,7 @@ export function Navigation() {
       ))}
       <li className="relative flex cursor-pointer justify-center py-1 font-semibold lg:hidden lg:py-3">
         <div
-          className={`flex justify-start rounded-md bg-zinc-100/75 px-5 py-4 dark:bg-zinc-950/75 dark:text-zinc-100`}
+          className={`flex justify-start rounded-md bg-zinc-100/75 px-4 py-3 dark:bg-zinc-950/75 dark:text-zinc-100`}
         >
           <Drawer>
             <DrawerTrigger asChild>
