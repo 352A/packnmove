@@ -34,7 +34,7 @@ export default function Hero9() {
           </div>
         </div>
       </div>
-      <div className="absolute bottom-0 h-20 w-full dark:bg-gradient-to-r dark:from-zinc-900 dark:to-zinc-800 lg:hidden"></div>
+      <div className="absolute bottom-0 h-20 w-full bg-zinc-50 dark:bg-gradient-to-r dark:from-zinc-900 dark:to-zinc-800 lg:hidden"></div>
     </section>
   );
 }

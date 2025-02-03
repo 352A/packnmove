@@ -40,9 +40,9 @@ export const projects = [
 
 export default function Process() {
   return (
-    <section className="relative w-full bg-gradient-to-r dark:bg-zinc-900 dark:from-zinc-900 dark:to-zinc-800 max-lg:px-6 max-lg:py-20">
+    <section className="relative w-full select-none bg-zinc-50 bg-gradient-to-r dark:bg-zinc-900 dark:from-zinc-900 dark:to-zinc-800 max-lg:px-6 max-lg:py-6">
       <div className="w-full bg-zinc-50 bg-gradient-to-r dark:bg-zinc-900 dark:from-zinc-900 dark:to-zinc-800 lg:rounded-b-[8rem] lg:border-b-[0.3rem] lg:border-zinc-800 lg:py-8 lg:dark:border-white">
-        <h2 className="text-center text-2xl font-bold leading-relaxed text-zinc-800 dark:text-zinc-100 lg:text-4xl">
+        <h2 className="pt-12 text-center text-2xl font-bold leading-relaxed text-zinc-800 dark:text-zinc-100 lg:text-4xl">
           PROFESSIONAL & QUICK PROCESS
         </h2>
         <div className="mx-auto lg:px-36">
