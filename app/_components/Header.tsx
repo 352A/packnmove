@@ -26,9 +26,11 @@ export function DesktopHeader() {
 
 export function MobileHeader() {
   return (
-    <header className="w-full bg-zinc-50 dark:bg-gradient-to-r dark:from-zinc-900 dark:to-zinc-800 lg:hidden">
-      <div className="flex w-full items-center justify-around py-1">
-        <Logo />
+    <header className="w-full dark:bg-gradient-to-r dark:from-zinc-900 dark:to-zinc-800 lg:hidden">
+      <div className="flex h-16 w-full items-center justify-around py-2">
+        <div className="w-14">
+          <Logo />
+        </div>
       </div>
     </header>
   );
