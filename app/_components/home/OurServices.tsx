@@ -49,7 +49,7 @@ export default function OurServices() {
   ];
 
   return (
-    <section className="relative dark:bg-white">
+    <section className="relative select-none dark:bg-white">
       {/* <div className="transalte-y-12 h-12 rounded-bl-[10rem] dark:bg-zinc-900"></div> */}
       <div className="bg-gradient-to-r dark:bg-zinc-900 dark:from-zinc-900 dark:to-zinc-800 lg:pb-32">
         <div className="flex flex-col gap-12 text-center lg:px-44">

@@ -86,7 +86,7 @@ export function Navigation() {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
   return (
-    <ul className="flex max-lg:justify-evenly lg:gap-12 lg:dark:text-zinc-200">
+    <ul className="flex max-lg:justify-around max-lg:px-4 lg:gap-12 lg:dark:text-zinc-200">
       {navLinks.map((nav, idx) => (
         <motion.li
           className={` ${path === nav.href ? "text-primary" : "text-zinc-900 dark:text-zinc-100"} relative flex cursor-pointer justify-center py-3 font-semibold`}
@@ -143,7 +143,7 @@ export function Navigation() {
               <IconMenu2 />
             </DrawerTrigger>
             <DrawerContent>
-              <div className="mx-auto w-full max-w-sm">
+              <div className="mx-auto w-full max-w-sm px-4">
                 <DrawerHeader>
                   <DrawerTitle className="my-4">Sitemap</DrawerTitle>
                   <DrawerDescription>Explore our services</DrawerDescription>
